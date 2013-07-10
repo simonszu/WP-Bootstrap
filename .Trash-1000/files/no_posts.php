@@ -1,0 +1,1 @@
+<h1><?php _e('No posts were found'); ?></h1>
