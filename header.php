@@ -19,7 +19,12 @@
     <link href="<?php bloginfo('template_url'); ?>/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/lightbox/css/lightbox.css" rel="stylesheet">
 
+
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo(‘rss2_url’); ?>" />
+    <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo(‘rss_url’); ?>" />
+    <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo(‘atom_url’); ?>" />
+    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo(‘name’); ?> RSS Comments Feed" href="<?php bloginfo(‘comments_rss2_url’); ?>" />
 
     <script src="<?php bloginfo('template_url'); ?>/bootstrap/js/bootstrap.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/bootstrap/js/bootstrap.min.js"></script>
