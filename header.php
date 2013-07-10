@@ -36,6 +36,10 @@
 
   <body>
     <div class="navbar navbar-fixed-top navbar-inverse">
+      <?php 
+        // Fix menu overlap bug..
+        if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>'; 
+      ?>
       <div class="navbar-inner">
         <a class="brand" href="/"><?php bloginfo('name'); ?> | <?php bloginfo('description') ?> </a>
          <?php wp_nav_menu( array(
