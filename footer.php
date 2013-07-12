@@ -1,5 +1,5 @@
  </div>
-    <div class="span3">
+    <div class="span3 visible-desktop visible-tablet hidden-phone">
       <?php get_sidebar(); ?>
     </div>
   </div>

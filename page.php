@@ -1,6 +1,11 @@
 <?php get_header(); ?>
   <?php the_post(); ?>
-  <h1><?php the_title(); ?></h1>
+  <div class="hidden-phone">
+    <h1><?php the_title(); ?></h1>
+  </div>
+  <div class="hidden-desktop hidden-tablet">
+    <h4><?php the_title(); ?></h4>
+  </div>
   <div>
     <?php the_content(); ?>
     <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:') . '&after=</div>') ?>

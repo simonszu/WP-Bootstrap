@@ -1,4 +1,9 @@
+<div class="hidden-phone">
 <h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+</div>
+<div class="hidden-desktop hidden-tablet">
+<h4><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
+</div>
 <p>            
   <?php the_content(); ?>               
 </p>

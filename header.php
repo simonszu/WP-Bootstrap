@@ -12,11 +12,11 @@
         }
         .navbar-form
         {
-            padding-top: 3px;
+            padding-top: 5px;
             padding-right: 10px;
         }
     </style>
-    <link href="<?php bloginfo('template_url'); ?>/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/lightbox/css/lightbox.css" rel="stylesheet">
 
 
