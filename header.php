@@ -5,19 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Le styles -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="screen">
-    <style>
-        body 
-        {
-            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-        }
-        .navbar-form
-        {
-            padding-top: 5px;
-            padding-right: 10px;
-        }
-    </style>
-    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="<?php bloginfo('template_url'); ?>/lightbox/css/lightbox.css" rel="stylesheet">
+    
+    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="<?php bloginfo('template_url'); ?>/lightbox/css/lightbox.css" rel="stylesheet" type="text/css" media="screen">
 
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -38,16 +29,24 @@
     <div class="navbar navbar-fixed-top navbar-inverse">
       <?php 
         // Fix menu overlap bug..
-        if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>'; 
+        if ( is_admin_bar_showing() ) echo '<div class="hidden-phone" style="min-height: 28px;"></div>'; 
       ?>
       <div class="navbar-inner">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+ 
         <a class="brand" href="/"><?php bloginfo('name'); ?> | <?php bloginfo('description') ?> </a>
+        <div class="nav-collapse collapse">
          <?php wp_nav_menu( array(
               'container' => false,
               'menu_class' => 'nav',
               'depth' => -1
               )); ?>
         <?php get_search_form(); ?>
+      </div>
       </div>
     </div>         
   <div class="container-fluid">

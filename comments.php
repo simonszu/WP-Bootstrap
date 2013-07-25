@@ -15,7 +15,7 @@
     ?>
   </h3>
   <ol>
-    <?php wp_list_comments( array( 'callback' => 'darkstripes_comments' ) ); ?>
+    <?php wp_list_comments('avatar_size=36&callback=graceblogger_comment&type=comment'); ?>
   </ol>
   <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
     <ul class="pager">

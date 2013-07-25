@@ -6,5 +6,10 @@
 </div>
 
 <?php wp_footer(); ?>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
+</script>
 </body>
 </html>
