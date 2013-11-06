@@ -10,7 +10,7 @@ body{
 }
 
 body > .navbar .brand{
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #main article img{
@@ -36,3 +36,14 @@ body > .navbar .brand{
 .post header img{
   margin-bottom: 18px;
 }
+
+/* Better Style for embedded gists
+/* Better styles for embedding GitHub Gists */
+.gist{font-size:13px;line-height:18px;margin-bottom:20px;width:100%}
+.gist pre{font-family:Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New',monospace !important}
+.gist-meta{font-family:Helvetica,Arial,sans-serif;font-size:13px !important}
+.gist-meta a{color:#26a !important;text-decoration:none}
+.gist-meta a:hover{color:#0e4071 !important}
+.line-data { font-size:11px; font-family: Consolas,"Liberation Mono",Courier,monospace; }
+.line-numbers { font-size:11px; background-color: #ECECEC; border-right: 1px solid #DDDDDD; color: #AAAAAA; padding: 0.0em; text-align: right; } 
+.line-pre { font-size:11px;font-family: Consolas,"Liberation Mono",Courier,monospace; }

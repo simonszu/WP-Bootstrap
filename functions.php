@@ -17,7 +17,7 @@ function graceblogger_comment($comment, $args, $depth) {
 <div class="comment-container">
 <div class="comment-head">
 <div class="avatar">
-<?php echo get_avatar($comment,$size='36',$default='<http://www.tillhecomes.org/wp-content/themes/StandardTheme_261/admin/images/blank-gravatar.jpg>' ); ?></div>
+<?php echo get_avatar($comment, 36); ?></div>
 <span class="name"><?php printf(__('<cite class="fn">%s</cite>'), get_comment_author_link()) ?></span>
 <span class="date"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></span>
 <span class="edit"><?php edit_comment_link(__('(Edit)'),' ','') ?></span>
@@ -36,4 +36,3 @@ function graceblogger_comment($comment, $args, $depth) {
 }
 
 ?>
-
