@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+
+<?php 
+  global $query_string;
+  query_posts($query_string . "&posts_per_page=-1"); 
+?>
+
   <div class="hidden-phone">
     <h1>
       <?php _e( 'Category Archives for' ) ?> <?php single_cat_title() ?>
@@ -18,4 +24,5 @@
       <?php _e('No posts were found'); ?>
     <?php endif; ?>
   </div>
+
 <?php get_footer(); ?>

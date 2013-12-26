@@ -4,7 +4,7 @@
 <div class="hidden-desktop hidden-tablet">
 <h4><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
 </div>
-<p>            
+<p class="text-justify">            
   <?php the_content(); ?>               
 </p>
 <div class="well well-small">
