@@ -15,7 +15,7 @@
     ?>
   </h3>
   <ol>
-    <?php wp_list_comments('avatar_size=36&callback=graceblogger_comment&type=comment'); ?>
+    <?php wp_list_comments('avatar_size=36&callback=graceblogger_comment&type=all'); ?>
   </ol>
   <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
     <ul class="pager">
